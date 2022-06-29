@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/register_layout"
+        tools:context=".RegisterActivity">
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:fontFamily="@font/bellerose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:fontFamily="@font/bellerose"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="NAME"
+            android:layout_marginTop="40dp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSignUp" />
+
+        <EditText
+            android:fontFamily="@font/bellerose"
+            android:id="@+id/etPassword"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="PASSWORD"
+            android:layout_marginTop="40dp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+        <EditText
+            android:fontFamily="@font/bellerose"
+            android:inputType="textEmailAddress"
+            android:id="@+id/etEmail"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:layout_marginTop="40dp"
+            android:singleLine="true"
+            android:hint="EMAIL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword"
+            tools:layout_editor_absoluteX="99dp" />
+
+        <EditText
+            android:fontFamily="@font/bellerose"
+            android:inputType="phone"
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:layout_marginTop="40dp"
+            android:hint="PHONE NUMBER"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+
+        <Button
+            android:fontFamily="@font/bellerose"
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="30dp"
+            android:text="Sign up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

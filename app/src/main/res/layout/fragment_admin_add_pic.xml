@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddPic">
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/bellerose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please enter the haircut name" />
+    <EditText
+        android:id="@+id/addPrice"
+        android:textSize="25dp"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bellerose"
+        android:hint="Please enter the haircut price" />
+    <EditText
+        android:id="@+id/addImage"
+        android:textSize="25dp"
+        android:layout_marginTop="250dp"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/bellerose"
+        android:layout_height="wrap_content"
+        android:hint="Please enter the haircut image address" />
+    <Button
+        android:id="@+id/addBtn"
+        android:textSize="25dp"
+        android:fontFamily="@font/bellerose"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="350dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click to apply" />
+
+</FrameLayout>

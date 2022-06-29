@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:id="@+id/mainXml">
+
+    <ImageView
+        android:id="@+id/tvBarberShop2"
+        android:background="@drawable/loginpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp" />
+
+    <FrameLayout
+        android:id="@+id/theOneApp"
+        android:layout_width="368dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_dialog"
+        android:layout_marginTop="230dp">
+
+        <TextView
+            android:id="@+id/justText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bellerose"
+            android:text="Booking information:"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_event_note_black_24dp" />
+
+        <TextView
+            android:id="@+id/appDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/bellerose"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/ic_account_circle_black_24dp" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/bellerose"
+            android:textSize="25dp" />
+
+    </FrameLayout>
+
+    <Button
+        android:fontFamily="@font/bellerose"
+        android:id="@+id/newAppBtn"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="350dp"
+        android:text="New appointment"/>
+
+    <Button
+        android:fontFamily="@font/bellerose"
+        android:id="@+id/updateAppBtn"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="400dp"
+        android:text="Delete appointment"/>
+
+    <Button
+        android:fontFamily="@font/bellerose"
+        android:id="@+id/navBtn"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="550dp"
+        android:text="Navigate to barber"/>
+</FrameLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login2">
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.test2.Login"
+        android:label="login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login2_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_login2_to_menu"
+            app:destination="@id/menu"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/login2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login2_to_adminFragmentMenu"
+            app:destination="@id/adminFragmentMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.test2.Register"
+        android:label="register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_to_login2"
+            app:destination="@id/login2"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/login2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.test2.Menu"
+        android:label="menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menu_to_newApp"
+            app:destination="@id/newApp" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/newApp"
+        android:name="com.example.test2.NewApp"
+        android:label="fragment_new_app"
+        tools:layout="@layout/fragment_new_app" >
+        <action
+            android:id="@+id/action_newApp_to_postFragment"
+            app:destination="@id/postFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.test2.PostFragment"
+        android:label="PostFragment"
+        tools:layout="@layout/fragment_post">
+        <argument
+            android:name="blogPost"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_postFragment_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminFragmentMenu"
+        android:name="com.example.test2.AdminFragmentMenu"
+        android:label="fragment_admin_menu"
+        tools:layout="@layout/fragment_admin_menu" >
+        <action
+            android:id="@+id/action_adminFragmentMenu_to_adminAppUpdateMenu"
+            app:destination="@id/adminAppUpdateMenu" />
+        <action
+            android:id="@+id/action_adminFragmentMenu_to_adminPicsUpdate"
+            app:destination="@id/adminPicsUpdate" />
+        <action
+            android:id="@+id/action_adminFragmentMenu_to_adminAddPic3"
+            app:destination="@id/adminAddPic3" />
+        <action
+            android:id="@+id/action_adminFragmentMenu_to_adminUpdateHours"
+            app:destination="@id/adminUpdateHours" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAppUpdateMenu"
+        android:name="com.example.test2.AdminPicDeleteMenu"
+        android:label="fragment_admin_app_update_menu"
+        tools:layout="@layout/fragment_admin_app_update_menu" >
+        <argument
+            android:name="blogPost"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminPicsUpdate"
+        android:name="com.example.test2.AdminAppDelete"
+        android:label="fragment_admin_pics_update"
+        tools:layout="@layout/fragment_admin_pics_update" >
+        <argument
+            android:name="blogPost"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAddPic3"
+        android:name="com.example.test2.AdminAddPic"
+        android:label="fragment_admin_add_pic"
+        tools:layout="@layout/fragment_admin_add_pic" />
+    <fragment
+        android:id="@+id/adminUpdateHours"
+        android:name="com.example.test2.AdminUpdateHours"
+        android:label="fragment_admin_update_hours"
+        tools:layout="@layout/fragment_admin_update_hours" />
+
+
+</navigation>

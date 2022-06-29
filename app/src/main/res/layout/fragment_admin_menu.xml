@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".AdminFragmentMenu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bellerose"
+        android:text="Hello Admin"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="130dp"
+        android:textSize="30dp"
+        />
+    <Button
+        android:id="@+id/adminUpdateApp"
+        android:textSize="20dp"
+        android:fontFamily="@font/bellerose"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:text="Delete haircuts"/>
+    <Button
+        android:id="@+id/adminAddPic"
+        android:textSize="20dp"
+        android:fontFamily="@font/bellerose"
+        android:backgroundTint="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:text="Add new haircut"/>
+
+    <Button
+        android:id="@+id/adminUpdatePic"
+        android:textSize="20dp"
+        android:fontFamily="@font/bellerose"
+        android:backgroundTint="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="300dp"
+        android:text="Delete appointments"/>
+
+    <Button
+        android:id="@+id/adminUpdateHour"
+        android:textSize="20dp"
+        android:fontFamily="@font/bellerose"
+        android:backgroundTint="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="400dp"
+        android:text="Update hours"/>
+
+
+</FrameLayout>

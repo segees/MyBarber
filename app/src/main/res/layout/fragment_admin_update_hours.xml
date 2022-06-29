@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".AdminUpdateHours">
+    <EditText
+        android:id="@+id/startHour"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/bellerose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="start hour" />
+    <EditText
+        android:id="@+id/endHour"
+        android:textSize="25dp"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bellerose"
+        android:hint="end hour" />
+
+    <Button
+        android:id="@+id/updateHourBtn"
+        android:textSize="25dp"
+        android:fontFamily="@font/bellerose"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click to apply" />
+
+</FrameLayout>

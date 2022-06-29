@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="blogPost"
+            type="com.example.test2.BlogPost" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:backgroundTint="@color/colorBackground"
+            android:padding="20dp"
+            android:transitionName="post_card_detail_transition_name"
+            app:cardCornerRadius="10dp">
+
+            <ImageButton
+                android:id="@+id/navigation_back_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:background="?attr/actionBarItemBackground"
+                android:scaleType="fitXY" />
+            <TextView
+                android:id="@+id/blog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/bellerose"
+                android:text="The Title of a Blog"
+                android:textColor="#000"
+                android:textSize="30sp" />
+            <DatePicker
+                android:id="@+id/calenderPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp">
+            </DatePicker>
+            <Spinner
+                android:id="@+id/timeSpinner"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:backgroundTint="@color/teal_200"
+                android:text="00:00d"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="450dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bellerose"
+                android:textSize="25dp"
+                android:id="@+id/timeBtn"
+                android:backgroundTint="@color/blue"
+                android:text="submit"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="550dp"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
+</layout>
